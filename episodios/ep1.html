@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title> Ep. 1</title>
+  <link rel="stylesheet" href="style1.css">
+  <link rel="shortcut icon" href="/imagens/favicongame.png" type="image/x-icon">
+</head>
+<body>
+
+     <!-- Tela de nome -->
+  <div id="name-screen">
+    <div id="name-box">
+        <h2>Digite seu nome:</h2>
+        <input type="text" id="name-input" placeholder="Seu nome...">
+        <button id="start-btn">Começar</button>
+    </div>
+  </div>
+
+        
+    <!-- Container do jogo -->
+  <div id="game-container" style="display: none;">
+    <div id="character"></div>
+    <div id="text-box" onclick="nextText()"></div>
+    <div id="choices"></div>
+    <div id="fade-screen"></div>
+  </div>
+
+  <audio id="bg-music" src="/imagens/gothic.mp3" loop autoplay></audio>
+  <script src="script1.js"></script>
+</body>
+</html>
